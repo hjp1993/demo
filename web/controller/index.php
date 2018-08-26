@@ -9,6 +9,7 @@
 namespace web\controller;
 
 use core\View;
+use Gregwar\Captcha\CaptchaBuilder;
 
 class Index
 {
@@ -22,5 +23,13 @@ class Index
     public function show()
     {
         return $this->view->make('index')->with('version','v 1.0');
+    }
+
+    public function code()
+    {
+        header('Content-type: image/jpeg');
+        $builder = new CaptchaBuilder;
+        $builder->build();
+        $builder->output();
     }
 }

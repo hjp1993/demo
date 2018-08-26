@@ -19,7 +19,6 @@ class Bootstrap
     {
         if (isset($_GET['s'])) {
             $info = explode('/', $_GET['s']);
-            dd($info);
             $class  = '\web\controller\\' . $info[0];
             $action = $info[1];
         } else {
