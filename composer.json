@@ -1,0 +1,14 @@
+{
+    "name": "hjp1993/demo",
+    "description": "test",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "hjp1993",
+            "email": "840426804@qq.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {}
+}
