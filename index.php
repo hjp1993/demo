@@ -5,4 +5,5 @@
  * Date: 2018/8/26
  * Time: 10:54
  */
-Bootstrap::run();
+include "vendor/autoload.php";
+core\Bootstrap::run();

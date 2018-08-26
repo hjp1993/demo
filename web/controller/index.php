@@ -5,11 +5,22 @@
  * Date: 2018/8/26
  * Time: 11:04
  */
+
 namespace web\controller;
 
-class Index{
+use core\View;
+
+class Index
+{
+    protected $view;
+
+    public function __construct()
+    {
+        $this->view = new View();
+    }
+
     public function show()
     {
-        echo "hjp";
+        return $this->view->make('index')->with('version','v 1.0');
     }
 }
